@@ -1,0 +1,85 @@
+#button1{
+    border-radius: 15px;
+    border-color: brown;
+    border-width: 10px;
+}
+.surpresa{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: brown;
+    border-radius: 10px;
+    
+}
+#body1{
+    background-color: crimson;
+}
+#onde{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    background: 100px; 
+}
+
+#seta{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+#meuBotao{
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+    width: 100px;
+    background-color: blue;
+    color: aliceblue;
+}
+#senha{
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: blue;
+    color: aliceblue;
+}
+#nome{
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: blue;
+    color: aliceblue;
+}
+input::placeholder{
+    color: aliceblue;
+}
+#corpo{
+    background-color: rgb(141, 141, 141);
+}
+#prime{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+}
+#cartinha{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    color: cornflowerblue;
+    text-align: justify;
+
+}
+#cart{
+    background-color: rgb(43, 1, 81);
+}
+#tit{
+    color: goldenrod;
+    text-align: center;
+}
+#cicio{
+    color: cornflowerblue;
+    padding-top: 120px;
+}

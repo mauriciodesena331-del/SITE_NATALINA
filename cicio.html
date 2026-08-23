@@ -141,6 +141,11 @@
 
 <body>
 
+
+    <audio id="musicaFundo" loop>
+        <source src="naovoumentir-lagum.mp3" type="audio/mpeg">
+    </audio>
+
     <header class="header">
         <h1>Ponto de vista Cicio</h1>
     </header>
@@ -233,6 +238,21 @@
                 video.pause();
                 video.currentTime = 0
             });
+        });
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const musica = document.getElementById('musicaFundo');
+
+            // Tenta tocar automaticamente
+            let playPromise = musica.play();
+
+            if (playPromise !== undefined) {
+                playPromise.catch(() => {
+                    document.body.addEventListener('click', () => {
+                        musica.play();
+                    }, { once: true }); 
+                });
+            }
         });
     </script>
 </body>

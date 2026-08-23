@@ -141,6 +141,9 @@
 </head>
 
 <body>
+    <audio id="musicaFundo" loop>
+        <source src="deixa-lagumm.mp3" type="audio/mpeg">
+    </audio>
 
     <header class="header">
         <h1>Ponto de vista Natalinda</h1>
@@ -195,6 +198,23 @@
                 video.pause();
                 video.currentTime = 0
             });
+        });
+
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const musica = document.getElementById('musicaFundo');
+
+            // Tenta tocar automaticamente
+            let playPromise = musica.play();
+
+            if (playPromise !== undefined) {
+                playPromise.catch(() => {
+
+                    document.body.addEventListener('click', () => {
+                        musica.play();
+                    }, { once: true });
+                });
+            }
         });
     </script>
 </body>

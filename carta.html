@@ -1,16 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CARTA</title>
+    <title>Carta p/ Nataly</title>
     <link rel="stylesheet" href="css/dem.css">
+    <style>
+        /* Reseta margens e define o fundo geral */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #cart {
+            background-color: #8b5cf6;
+            /* O roxo da sua imagem */
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Container que simula a "Carta" */
+        #cart {
+            background-color: #8b5cf6;
+            /* Roxo principal */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        /* Estilização do bloco do texto (Card) */
+        .carta-container {
+            max-width: 650px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.15);
+            /* Efeito vidro transparente */
+            backdrop-filter: blur(10px);
+            /* Desfoca o fundo */
+            border-radius: 16px;
+            padding: 35px 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        /* Título 3D com destaque */
+        #tit {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+            text-shadow:
+                1px 1px 0px #6d28d9,
+                2px 2px 0px #5b21b6,
+                3px 3px 0px #4c1d95,
+                4px 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Texto da Carta */
+        #cartinha {
+            color: #ffffff;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            /* Aumenta o espaço entre as linhas para facilitar a leitura */
+            text-align: justify;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilização do rodapé/assinatura */
+        #cartinha br+br {
+            display: block;
+            content: "";
+            margin-top: 15px;
+        }
+    </style>
 </head>
+
 <body id="cart">
-    <h1 id="tit">CARTA ABERTINHA😁</h1>
-    <p id="cartinha">oie nataly, hoje é dia 14 de abril de 2026, gosto muito de você desde o dia que eu te conheci linda,sinto saudades todos os dias falta de você, to apaixonado admito, espero que a gente continue se falando pra eu poder continuar atualizando o site para você rsrs. <br><br>
-    Oi linda, de novo, hoje é dia 20 de abril de 2026, e a 3 dias atrás eu declarei oficialmente que estava apaixonado, e no mesmo dia, mais tarde rolou nosso primeiro beijo, e confesso na hora me pegou desprevinido mas eu senti algo que eu ainda não tinha sentido, é ate meio inexplicavel, mas eu sinto e sei que a cada dia que passa eu tenho mais certeza de você e sei que mesmo você tentando criar uma barreira, eu vou romper ela e assim finalmente poder te mostrar o que eu tenho de bom para oferecer.
-    </p>
-    <p id="cicio">Ass: ciciu rsrs🩵&copy;</p>
+    <div class="carta-container">
+        <h1 id="tit">CARTA ABERTINHA 😁</h1>
+        <p id="cartinha">
+            oie nataly, hoje é dia 14 de abril de 2026, gosto muito de você desde o dia que eu te conheci linda,sinto
+            saudades
+            todos os dias falta de você, to apaixonado admito, espero que a gente continue se falando pra eu poder
+            continuar
+            atualizando o site para você rsrs. <br><br>
+            Oi linda, de novo, hoje é dia 20 de abril de 2026, e a 3 dias atrás eu declarei oficialmente que estava
+            apaixonado,
+            e no mesmo dia, mais tarde rolou nosso primeiro beijo, e confesso na hora me pegou desprevinido mas eu senti
+            algo
+            que eu ainda não tinha sentido, é ate meio inexplicavel, mas eu sinto e sei que a cada dia que passa eu
+            tenho mais
+            certeza de você e sei que mesmo você tentando criar uma barreira, eu vou romper ela e assim finalmente poder
+            te
+            mostrar o que eu tenho de bom para oferecer. <br><br>
+            Oi amor, hoje é dia 23 de agosto, sim eu passei esse tempo todo sem escrevver nada, me desculpa tava muito focado nas materias do curso e acabei esquecendo, felizmente me aprimorei os codigos e agora posso fazer um site lindo para você.
+            esses ultimos tempos foram dificeis para nós, mas com todo nosso amor sei que podemos enfrentar e vencer qualquer coisa meu amor, sinto muito por ter feito voc~e peder a confiança que tinha em mim mas pode ter certeza que você a mulher que eu mais quero.
+        <p id="cicio">Ass: ciciu rsrs🩵&copy;</p>
+        </p>
+    </div>
 </body>
+
 </html>
